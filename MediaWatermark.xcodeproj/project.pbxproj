@@ -24,13 +24,13 @@
 		8EAFD1B42008CE56005498D4 /* MediaVideoProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAFD1AA2008CE56005498D4 /* MediaVideoProcessor.swift */; };
 		8EAFD1B62008CE56005498D4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAFD1AD2008CE56005498D4 /* Assets.swift */; };
 		8EAFD1B72008CE56005498D4 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAFD1AE2008CE56005498D4 /* Images.swift */; };
-		8EAFD1B82008CE56005498D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EAFD1AF2008CE56005498D4 /* Info.plist */; };
 		8ED16CE7200E0360009AA4B9 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 8ED16CE6200E0360009AA4B9 /* CHANGELOG.md */; };
 		8EDE62292008D7BB00E0F8A5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE62262008D7BB00E0F8A5 /* LICENSE */; };
 		8EDE622A2008D7BB00E0F8A5 /* MediaWatermark.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE62272008D7BB00E0F8A5 /* MediaWatermark.podspec */; };
 		8EDE622B2008D7BB00E0F8A5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE62282008D7BB00E0F8A5 /* README.md */; };
 		8EDE622E2008D92900E0F8A5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE622D2008D92900E0F8A5 /* AVFoundation.framework */; };
 		8EDE62302008DF9700E0F8A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE622F2008DF9600E0F8A5 /* UIKit.framework */; };
+		A00323FA2181AACB009D53F7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A00323F92181AACB009D53F7 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,13 +52,13 @@
 		8EAFD1AA2008CE56005498D4 /* MediaVideoProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVideoProcessor.swift; sourceTree = "<group>"; };
 		8EAFD1AD2008CE56005498D4 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		8EAFD1AE2008CE56005498D4 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		8EAFD1AF2008CE56005498D4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED16CE6200E0360009AA4B9 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		8EDE62262008D7BB00E0F8A5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8EDE62272008D7BB00E0F8A5 /* MediaWatermark.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MediaWatermark.podspec; sourceTree = "<group>"; };
 		8EDE62282008D7BB00E0F8A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8EDE622D2008D92900E0F8A5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8EDE622F2008DF9600E0F8A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A00323F92181AACB009D53F7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,8 @@
 		8EAFD1A32008CE56005498D4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A00323F92181AACB009D53F7 /* Info.plist */,
 				8EAFD1A42008CE56005498D4 /* Classes */,
-				8EAFD1AF2008CE56005498D4 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -247,8 +247,8 @@
 			files = (
 				8EDE62292008D7BB00E0F8A5 /* LICENSE in Resources */,
 				8ED16CE7200E0360009AA4B9 /* CHANGELOG.md in Resources */,
-				8EAFD1B82008CE56005498D4 /* Info.plist in Resources */,
 				8EDE622B2008D7BB00E0F8A5 /* README.md in Resources */,
+				A00323FA2181AACB009D53F7 /* Info.plist in Resources */,
 				8EDE622A2008D7BB00E0F8A5 /* MediaWatermark.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +403,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B29X6K99WJ;
+				DEVELOPMENT_TEAM = 9663ZHNACQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -413,7 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.rubygarage.MediaWatermark;
 				PRODUCT_NAME = MediaWatermark;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -424,7 +424,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B29X6K99WJ;
+				DEVELOPMENT_TEAM = 9663ZHNACQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -434,7 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.rubygarage.MediaWatermark;
 				PRODUCT_NAME = MediaWatermark;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

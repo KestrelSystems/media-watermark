@@ -39,14 +39,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     // MARK: - UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let mediaType = info[UIImagePickerControllerMediaType] as! String
+        let mediaType = info[UIImagePickerController.InfoKey.mediaType.rawValue] as! String
         picker.dismiss(animated: true, completion: nil)
         
         if (mediaType == kUTTypeVideo as String) || (mediaType == kUTTypeMovie as String) {
-            let videoUrl = info[UIImagePickerControllerMediaURL] as! URL
+            let videoUrl = info[UIImagePickerController.InfoKey.mediaURL.rawValue] as! URL
             processVideo(url: videoUrl)
         } else {
-            let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+            let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage
             processImage(image: image!)
         }
     }
